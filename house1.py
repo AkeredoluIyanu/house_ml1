@@ -35,13 +35,6 @@ else:
     
     st.write('We used a pre-trained Random Forest model with a test score of **~0.90**.')
 
-# Plot feature importance
-st.subheader("🔍 Feature Importance")
-fig, ax = plt.subplots()
-sns.barplot(x=forest.feature_importances_, y=X.columns, ax=ax)
-ax.set_title('Top Features Affecting House Prices')
-plt.tight_layout()
-st.pyplot(fig)
 
 # User inputs for prediction
 st.subheader("📊 Predict House Price")
